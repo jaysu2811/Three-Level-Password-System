@@ -1,0 +1,11 @@
+Welcome to the Three-Level Password System!
+Level 1: Textual Password Authentication
+Enter your textual password: password123
+Level 1 authentication successful.
+Level 2: Graphical Password Authentication
+Enter your pattern (e.g., L-shape): L-shape
+Level 2 authentication successful.
+Level 3: Security Question Authentication
+What is your mother's maiden name? Smith
+Level 3 authentication successful.
+Access Granted. You have passed all levels of authentication.
