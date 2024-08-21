@@ -1,0 +1,52 @@
+def level_one_authentication():
+    print("Level 1: Textual Password Authentication")
+    password = input("Enter your textual password: ")
+    
+    # Hardcoded password for demonstration purposes
+    if password == "password123":
+        print("Level 1 authentication successful.")
+        return True
+    else:
+        print("Level 1 authentication failed.")
+        return False
+
+def level_two_authentication():
+    print("Level 2: Graphical Password Authentication")
+    pattern = input("Enter your pattern (e.g., L-shape): ")
+    
+    # Hardcoded pattern for demonstration purposes
+    if pattern == "L-shape":
+        print("Level 2 authentication successful.")
+        return True
+    else:
+        print("Level 2 authentication failed.")
+        return False
+
+def level_three_authentication():
+    print("Level 3: Security Question Authentication")
+    answer = input("What is your mother's maiden name? ")
+    
+    # Hardcoded answer for demonstration purposes
+    if answer.lower() == "smith":
+        print("Level 3 authentication successful.")
+        return True
+    else:
+        print("Level 3 authentication failed.")
+        return False
+
+def main():
+    print("Welcome to the Three-Level Password System!")
+    
+    if level_one_authentication():
+        if level_two_authentication():
+            if level_three_authentication():
+                print("Access Granted. You have passed all levels of authentication.")
+            else:
+                print("Access Denied. Level 3 authentication failed.")
+        else:
+            print("Access Denied. Level 2 authentication failed.")
+    else:
+        print("Access Denied. Level 1 authentication failed.")
+
+if __name__ == "__main__":
+    main()
